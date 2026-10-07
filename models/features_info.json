@@ -1,0 +1,79 @@
+{
+    "numerical_cols": [
+        "cgpa",
+        "attendance_percentage",
+        "backlogs",
+        "coding_score",
+        "aptitude_score",
+        "technical_score",
+        "projects_count",
+        "internships_count",
+        "hackathons_participated",
+        "communication_score",
+        "mock_interview_score",
+        "leadership_score"
+    ],
+    "categorical_cols": [
+        "preferred_domain"
+    ],
+    "categorical_options": {
+        "preferred_domain": [
+            "Data Science",
+            "Business Analytics",
+            "Software Development",
+            "Cloud Computing",
+            "AI/ML",
+            "Cyber Security"
+        ]
+    },
+    "numerical_ranges": {
+        "cgpa": {
+            "min": 5.0,
+            "max": 10.0
+        },
+        "attendance_percentage": {
+            "min": 55.0,
+            "max": 100.0
+        },
+        "backlogs": {
+            "min": 0.0,
+            "max": 4.0
+        },
+        "coding_score": {
+            "min": 15.0,
+            "max": 100.0
+        },
+        "aptitude_score": {
+            "min": 15.0,
+            "max": 100.0
+        },
+        "technical_score": {
+            "min": 15.0,
+            "max": 100.0
+        },
+        "projects_count": {
+            "min": 0.0,
+            "max": 15.0
+        },
+        "internships_count": {
+            "min": 0.0,
+            "max": 4.0
+        },
+        "hackathons_participated": {
+            "min": 0.0,
+            "max": 6.0
+        },
+        "communication_score": {
+            "min": 20.0,
+            "max": 100.0
+        },
+        "mock_interview_score": {
+            "min": 27.3,
+            "max": 100.0
+        },
+        "leadership_score": {
+            "min": 15.0,
+            "max": 100.0
+        }
+    }
+}
