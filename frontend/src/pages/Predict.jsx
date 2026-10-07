@@ -12,6 +12,7 @@ const STEPS = [
 ];
 
 const Predict = () => {
+  const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -36,7 +37,7 @@ const Predict = () => {
   const [domains, setDomains] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/features')
+    axios.get(`${API_URL}/api/features`)
       .then(res => {
         if (res.data.categorical_options && res.data.categorical_options.preferred_domain) {
           setDomains(res.data.categorical_options.preferred_domain);
@@ -77,7 +78,7 @@ const Predict = () => {
     });
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/api/predict', payload);
+      const response = await axios.post(`${API_URL}/api/predict`, payload);
       
       // Store in session storage to use in Results and Dashboard
       sessionStorage.setItem('recentPrediction', JSON.stringify(response.data));
@@ -314,3 +315,5 @@ const Predict = () => {
 };
 
 export default Predict;
+
+
