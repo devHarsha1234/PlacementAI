@@ -3,7 +3,6 @@ from flask_cors import CORS
 import joblib
 import pandas as pd
 import json
-import shap
 import os
 import numpy as np
 

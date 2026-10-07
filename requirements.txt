@@ -1,10 +1,6 @@
-pandas
-scikit-learn
 flask
 flask-cors
 joblib
-shap
-matplotlib
-seaborn
 numpy
-pytest
+pandas
+scikit-learn
